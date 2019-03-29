@@ -8,8 +8,8 @@ import {
 } from "react-native";
 
 //library imports 
-import { Container, Content, Icon, Header, Body } from 'native-base'
-import { DrawerNavigator, StackNavigator, DrawerItems, createAppContainer , createSwitchNavigator ,SafeAreaView } from 'react-navigation'
+import { Container, Content, Icon, Header, Body } from 'native-base';
+import { DrawerNavigator, StackNavigator, DrawerItems, createAppContainer , createSwitchNavigator ,SafeAreaView } from 'react-navigation';
 const firebase = require("firebase");
 var config = {
   apiKey: "AIzaSyAvo-92GW0qyvdEvG0JKfRrwHQK10pFzpc",
