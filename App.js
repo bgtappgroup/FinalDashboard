@@ -103,6 +103,15 @@ const stack = StackNavigator(
     },
     IncomeHistory:{
       screen:IncomeHistory
+    },
+    Login:{
+      screen:Login
+    },
+    signup:{
+      screen:signup
+    },
+    logout:{
+      screen:logout
     }
   },
   {
@@ -128,6 +137,19 @@ const MyApp = DrawerNavigator({
     drawerCloseRoute: 'DrawerClose',
     drawerToggleRoute: 'DrawerToggle'
   });
+
+  const Login = createAppContainer(createSwitchNavigator(
+    { 
+     signup:signup,
+     Main:Main,
+     Login:Login,    
+     Loading:Loading,
+     Logout:Logout,
+    },
+    {
+     initialRouteName: 'Loading'
+    }
+  ));
 
 
   // const MyApp = createAppContainer(createSwitchNavigator(
